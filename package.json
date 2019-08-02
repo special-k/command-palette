@@ -5,10 +5,11 @@
   "description": "Find and run available commands using `cmd-shift-p` (macOS) or `ctrl-shift-p` (Linux/Windows).",
   "activationCommands": {
     "atom-workspace": [
-      "command-palette:toggle"
+      "command-palette:toggle",
+      "command-palette:show-with-prefix"
     ]
   },
-  "repository": "https://github.com/atom/command-palette",
+  "repository": "https://github.com/special-k/command-palette",
   "license": "MIT",
   "engines": {
     "atom": "*"
@@ -37,6 +38,11 @@
       "type": "boolean",
       "default": false,
       "description": "Preserve the last search when reopening the command palette."
+    },
+    "defaultCommandPath": {
+      "type": "string",
+      "default": "",
+      "description": "Default text in command palette."
     }
   }
 }
